@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Accounts">
+   <top>
+      <HBox prefHeight="0.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar prefHeight="25.0" prefWidth="734.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="375.0" prefWidth="195.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="41.0" prefWidth="195.0" text="Present Accounts">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <ListView prefHeight="372.0" prefWidth="195.0" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox spacing="20.0">
+         <children>
+            <HBox spacing="20.0">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="38.0" text="Name" />
+                  <TextField fx:id="accountNameInput" promptText="Enter name of account" />
+                  <Region prefHeight="25.0" prefWidth="5.0" />
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Add Account" />
+               </children>
+            </HBox>
+            <TableView prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn prefWidth="177.0" text="Name" />
+                <TableColumn prefWidth="169.0" text="Type" />
+              </columns>
+            </TableView>
+            <VBox prefHeight="74.0" prefWidth="347.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="columnNameInput" promptText="Name of column" />
+                        <Region prefHeight="34.0" prefWidth="52.0" />
+                        <ComboBox fx:id="dataTypeInput" prefWidth="150.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_RIGHT">
+                     <children>
+                        <Button fx:id="addColumnButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Add column" />
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="29.0" left="29.0" right="29.0" top="29.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>
