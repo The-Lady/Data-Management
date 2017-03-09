@@ -5,7 +5,7 @@ A small Java based application to manage data from different accounts.
 ### Database
 1. Install JDBC Driver (MySQL Database is used in this Project so [MySQL Connector](https://dev.mysql.com/downloads/connector/j/) is used).
 2. Create database 'adm'.
-3. Create table  with following command : 
+3. Create table  with following command.
 
          CREATE TABLE products
             (
