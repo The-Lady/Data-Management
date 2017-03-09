@@ -6,6 +6,7 @@ import java.sql.*;
 
 public class SQL_Connector {
     /*
+    * DATABASE_NAME         adm
     *
     * Use USER_NAME and PASSWORD for your MySQL Database
     * DEFAULT_USER          private String user="root";
